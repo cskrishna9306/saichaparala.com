@@ -12,7 +12,7 @@ function AboutMe() {
         {/* <Interests />  */}
         {/* <Music />
         <Projects /> */}
-        <Footer />
+        {/* <Footer /> */}
     </>
   );
 }

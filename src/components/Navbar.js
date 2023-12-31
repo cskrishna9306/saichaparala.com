@@ -11,11 +11,12 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
+    // if (window.innerWidth <= 960)
+    //   setButton(false);
+    // else
+    //   setButton(true);
+
+    (window.innerWidth <= 960) ? setButton(false) : setButton(true)
   };
 
   useEffect(() => {

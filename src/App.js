@@ -10,20 +10,18 @@ import Projects from './components/pages/Projects'
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/aboutMe' element={<AboutMe />} />
-          <Route path='/interests' element={<Interests />} />
-          <Route path='/music' element={<Music />} />
-          <Route path='/projects' element={<Projects />} />
-        </Routes>
-        {/* <Introduction></Introduction> */}
-        {/* // Either add footer here or under every page */}
-      </Router>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/aboutMe' element={<AboutMe />} />
+        <Route path='/interests' element={<Interests />} />
+        <Route path='/music' element={<Music />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+      {/* <Introduction></Introduction> */}
+      {/* // Either add footer here or under every page */}
+    </Router>
   );
 }
 

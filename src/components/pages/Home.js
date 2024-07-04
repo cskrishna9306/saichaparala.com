@@ -1,26 +1,16 @@
 import React from 'react';
+import { Slide } from 'react-slideshow-image';
+import "react-slideshow-image/dist/styles.css";
 import '../../App.css';
-import Footer from '../Footer';
 // import Cards from '../Cards';
-import HeroSection from '../HeroSection';
-import Navbar from '../Navbar';
-import AboutMe from './AboutMe';
-// import Footer from '../Footer';
-// import AboutMe from '../AboutMe'
-// import Interests from './Interests'
-// import Footer from '../Footer';
+import './Home.css'
 
 function Home() {
   return (
-    <>
-        {/* <Navbar /> */}
-        <HeroSection />
-        <AboutMe />
-        {/* <Interests />  */}
-        {/* <Music />
-        <Projects /> */}
-        <Footer />
-    </>
+    <div className='hero-container'>
+      <h1>Welcome to my website!</h1>
+      <p>Use the navigation bar above to learn more about me!</p>
+    </div>
   );
 }
 

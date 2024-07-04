@@ -19,8 +19,6 @@ function App() {
         <Route path='/music' element={<Music />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
-      {/* <Introduction></Introduction> */}
-      {/* // Either add footer here or under every page */}
     </Router>
   );
 }

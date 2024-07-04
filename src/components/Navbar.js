@@ -1,83 +1,61 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+  // Initialize a variable "click" that stores the current state value and its corresponding setter function "setClick" that allows us to update the "click" state variable
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
+  // Handles the state value for the "click" variable: true -> false, false -> true
   const handleClick = () => setClick(!click);
+  // Sets the state of the "click" variable to be false
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    // if (window.innerWidth <= 960)
-    //   setButton(false);
-    // else
-    //   setButton(true);
-
-    (window.innerWidth <= 960) ? setButton(false) : setButton(true)
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
-
   return (
-    <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Welcome!
-            <i class='fab fa-typo3' />
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
+          {/* <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            /
+          </Link> */}
+
+          {/* TODO: Need to work on menu icon upon screen resize */}
+          {/* <div>
+            {click && 
+            <div className='menu-icon' onClick={handleClick}>
+              <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            </div>}
+          </div> */}
+          
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            {/* <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+          {/* <ul className='nav-menu'> */}
+            {/* Navbar link to the Home page */}
+            <li>
+              <Link to='/' className='nav-item' onClick={closeMobileMenu}>
+                <i className="navbar-logo">
+                /
+                </i>
               </Link>
-            </li> */}
-            <li className='nav-item'>
-              <Link
-                to='/aboutMe'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+            </li>
+            {/* Navbar link to the AboutMe.js page */}
+            <li>
+              <Link to='/aboutMe' className='nav-item' onClick={closeMobileMenu}>
                 About Me
               </Link>
             </li>
-
-            <li className='nav-item'>
-              <Link
-                to='/interests'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+            {/* Navbar link to the Interests.js page */}
+            <li>
+              <Link to='/interests' className='nav-item' onClick={closeMobileMenu}>
                 Interests
               </Link>
             </li>
-
-            <li className='nav-item'>
-              <Link
-                to='/music'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+            {/* Navbar link to the Music.js page */}
+            <li>
+              <Link to='/music' className='nav-item' onClick={closeMobileMenu}>
                 Music
               </Link>
             </li>
-
-            <li className='nav-item'>
-              <Link
-                to='/projects'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+            {/* Navbar link to the Projects.js page */}
+            <li>
+              <Link to='/projects' className='nav-item' onClick={closeMobileMenu}>
                 Projects
               </Link>
             </li>
@@ -92,17 +70,8 @@ function Navbar() {
               </Link>
             </li> */}
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
-          {/* {button && <li><Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link></li>} */}
         </div>
       </nav>
-    </>
   );
 }
 

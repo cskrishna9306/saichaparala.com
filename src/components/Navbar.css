@@ -1,28 +1,27 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    /* background-color: transparent; */
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
   
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    max-width: 1500px;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  /* max-width: 1500px; */
+  width: 100%;
+}
   
   .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -30,36 +29,24 @@
     align-items: center;
   }
   
-  .fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-  }
-  
   .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    display: flex;
     list-style: none;
     text-align: center;
-    width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
+    width: 100%;
+    justify-content: center;
   }
   
   .nav-item {
-    height: 40px;
-  }
-  
-  .nav-links {
     color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    height: 100%;
+    height: 80px;
   }
   
-  .nav-links:hover {
+  .nav-item:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
   }
@@ -94,7 +81,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .NavbarItems {
       position: relative;
     }
@@ -110,7 +97,6 @@
       opacity: 1;
       transition: all 0.5s ease;
       justify-content: start;
-      /* justify-content: flex-start; */
     }
   
     .nav-menu.active {
@@ -123,8 +109,9 @@
   
     .navbar-logo {
       position: absolute;
-      top: 0;
-      left: 0;
+      top:0;
+      left: 10;
+    /* position: relative; */
       transform: translate(25%, 50%);
     }
   
@@ -143,7 +130,7 @@
       font-size: 2rem;
     }
   
-    .nav-links {
+    .nav-item {
       /* text-align: center;
       padding: 2rem;
       width: 100%;
@@ -163,7 +150,7 @@
       transition: all 0.3s ease-out;
     }
     
-    .nav-links:hover {
+    .nav-item:hover {
       background-color: #fff;
       color: #242424;
       border-radius: 0;

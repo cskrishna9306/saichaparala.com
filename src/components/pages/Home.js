@@ -2,7 +2,6 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import "react-slideshow-image/dist/styles.css";
 import '../../App.css';
-// import Cards from '../Cards';
 import './Home.css'
 
 function Home() {

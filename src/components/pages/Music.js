@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import Introduction from '../HeroSection';
 import Badminton from '../Badminton'
 
 function Music() {

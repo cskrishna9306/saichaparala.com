@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../App.css';
-import Footer from '../Footer';
-import Badminton from '../Badminton'
+import Footer from '../components/Footer';
+import Badminton from '../components/Badminton'
 
 function Projects() {
   return (

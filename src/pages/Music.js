@@ -1,9 +1,8 @@
 import React from 'react';
-import '../../App.css';
-import Footer from '../Footer';
-import Badminton from '../Badminton'
+import Footer from '../components/Footer';
+import Badminton from '../components/Badminton'
 
-function Interests() {
+function Music() {
   return (
     <>
         {/* <Badminton /> */}
@@ -17,4 +16,4 @@ function Interests() {
   );
 }
 
-export default Interests;
+export default Music;

@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
+import './css/App.css';
+import Navbar from './Navbar';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './components/pages/Home';
-import AboutMe from './components/pages/AboutMe';
-import Interests from './components/pages/Interests';
-import Music from './components/pages/Music'
-import Projects from './components/pages/Projects'
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import Interests from './pages/Interests';
+import Music from './pages/Music'
+import Projects from './pages/Projects'
 
 function App() {
   return (

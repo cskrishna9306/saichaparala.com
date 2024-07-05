@@ -1,20 +1,17 @@
 import React from 'react';
-import '../../App.css';
-import Footer from '../Footer';
-import Badminton from '../Badminton'
+import Introduction from '../components/Introduction';
 
-function Music() {
+function AboutMe() {
   return (
     <>
-        {/* <Badminton /> */}
+        <Introduction />
         {/* <AboutMe /> */}
         {/* <Interests />  */}
         {/* <Music />
         <Projects /> */}
         {/* <Footer /> */}
-        <h1>Under Development</h1>
     </>
   );
 }
 
-export default Music;
+export default AboutMe;

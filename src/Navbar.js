@@ -48,6 +48,12 @@ function Navbar() {
                 Music
               </Link>
             </li>
+            {/* Navbar link to the Skills.js page */}
+            <li>
+              <Link to='/skills' className='nav-item' onClick={closeMobileMenu}>
+                Skills
+              </Link>
+            </li>
             {/* Navbar link to the Projects.js page */}
             <li>
               <Link to='/projects' className='nav-item' onClick={closeMobileMenu}>

@@ -12,11 +12,6 @@ function Navbar() {
 
   return (
       <nav className='navbar'>
-        <div className='navbar-container'>
-          {/* <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            /
-          </Link> */}
-
           {/* TODO: Need to work on menu icon upon screen resize */}
           {/* <div>
             {click && 
@@ -24,7 +19,7 @@ function Navbar() {
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>}
           </div> */}
-          
+
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           {/* <ul className='nav-menu'> */}
             {/* Navbar link to the Home page */}
@@ -59,18 +54,19 @@ function Navbar() {
                 Projects
               </Link>
             </li>
-
-            {/* <li>
-              <Link
-                to='/socials'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Socials
-              </Link>
-            </li> */}
           </ul>
-        </div>
+
+          {/* TODO: Work on displaying the socials in the Navbar */}
+          {/* <ul className='nav-socials'>
+            <li>
+            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+            <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>            </li>
+            <li>
+            <a href="https://www.github.com" class="social-icon"><i class="fab fa-github"></i></a>
+            </li>
+          </ul> */}
       </nav>
   );
 }

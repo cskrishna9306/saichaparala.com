@@ -20,7 +20,7 @@ function Navbar() {
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>}
           </div> */}
-          <Link to='/'>
+          <Link to='/' style={{ textDecoration: 'none' }}>
             <div className='navbar-icon'>
               <img src={capitol} alt="icon" />
               <text>Sai Chaparala</text>

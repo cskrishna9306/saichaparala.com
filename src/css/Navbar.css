@@ -83,11 +83,11 @@ body {
   }
 
   .navbar-icon img {
-    width: 7%; /* Adjust the size as needed */
+    width: 6%; /* Adjust the size as needed */
     /* height: 1px; Adjust the size as needed */
     border-radius: 50%;
     object-fit: cover;
-    height: 70%;
+    height: 60%;
     align-self: center;
   }
 

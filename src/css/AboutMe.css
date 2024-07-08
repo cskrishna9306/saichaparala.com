@@ -1,53 +1,59 @@
-.about-me-container {
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-me {
     /* background: url('../../public/images/Image 1.JPEG') center center/cover no-repeat; */
     background-color: black;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
+    padding: 2% 10%;
   }
-  
-  .about-me-container > h1 {
+
+  .about-me > h1 {
     color: #fff;
     font-size: 50px;
+    align-self: center;
     /* margin-top: -200px; */
+    /* padding: 2%; */
   }
   
-  .about-me-container > p {
-    margin-top: 8px;
+  .about-me > p {
+    /* margin-top: 8px; */
     color: #fff;
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
     /* width: 15cm; */
-    margin-left: 5cm;
-    margin-right: 5cm;
+    /* margin-left: 5cm;
+    margin-right: 5cm; */
     width:fit-content;
     text-align: justify;
+    padding: 2%;
   }
 
-  .about-me-container > img {
-    
-    align-items: center;
+  .about-me > img {
+    align-self: center;
     width: 250px;
+    padding: 2%;
   }
 
   .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    /* align-items: center; */
   }
   
   /* Create two equal columns that sits next to each other */
   .column {
     /* -ms-flex: 50%; */
     flex: 50%;
-    padding: 0 4px;
+    /* padding: 0 4px; */
     /* padding-left: 1cm; */
+    align-items: center;
   }
   
   .column img {

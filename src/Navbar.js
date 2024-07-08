@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './css/Navbar.css';
+import capitol from './images/capitol.jpg'
 
 function Navbar() {
   // Initialize a variable "click" that stores the current state value and its corresponding setter function "setClick" that allows us to update the "click" state variable
@@ -19,9 +20,16 @@ function Navbar() {
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>}
           </div> */}
+          <Link to='/'>
+            <div className='navbar-icon'>
+              <img src={capitol} alt="icon" />
+              <text>Sai Chaparala</text>
+            </div>
+          </Link>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           {/* <ul className='nav-menu'> */}
+            
             {/* Navbar link to the Home page */}
             <li>
               <Link to='/' className='nav-item' onClick={closeMobileMenu}>

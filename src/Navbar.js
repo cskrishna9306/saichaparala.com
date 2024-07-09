@@ -26,7 +26,7 @@ function Navbar() {
               <text>Sai Chaparala</text>
             </div>
           </Link>
-
+          {/* Links to different pages */}
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           {/* <ul className='nav-menu'> */}
             
@@ -69,18 +69,23 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-
-          {/* TODO: Work on displaying the socials in the Navbar */}
-          {/* <ul className='nav-socials'>
-            <li>
-            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-            <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>            </li>
-            <li>
-            <a href="https://www.github.com" class="social-icon"><i class="fab fa-github"></i></a>
-            </li>
-          </ul> */}
+          {/* Social Handles in Navigation bar*/}
+          <div className='nav-socials'>
+            <ul>
+              <li>
+                <a href="mailto:cskrishna9306@gmail.com"><i class="fa fa-envelope"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/_saaiii/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sai-chaparala-71817b206"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/cskrishna9306"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
       </nav>
   );
 }

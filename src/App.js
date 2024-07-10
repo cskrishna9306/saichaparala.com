@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Interests from './pages/Interests';
-import Music from './pages/Music'
+import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/aboutMe' element={<AboutMe />} />
         <Route path='/interests' element={<Interests />} />
-        <Route path='/music' element={<Music />} />
+        <Route path='/skills' element={<Skills />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
     </Router>

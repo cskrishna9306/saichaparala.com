@@ -1,0 +1,20 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.music {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 10%;
+}
+
+.music h1 {
+    color: #fff;
+    font-size: 50px;
+    align-self: center;
+    /* margin-top: -200px; */
+    /* padding: 2%; */
+  }

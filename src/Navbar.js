@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './css/Navbar.css';
-import capitol from './images/capitol.jpg'
+import capitol from './images/portraits/capitol.jpg'
 
 function Navbar() {
   // Initialize a variable "click" that stores the current state value and its corresponding setter function "setClick" that allows us to update the "click" state variable
@@ -20,58 +20,53 @@ function Navbar() {
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>}
           </div> */}
-          <Link to='/' style={{ textDecoration: 'none' }}>
+          {/* <Link to='/' style={{ textDecoration: 'none'}}> */}
             <div className='navbar-icon'>
+            <Link to='/' style={{ textDecoration: 'none', display: "flex"}}>
+
               <img src={capitol} alt="icon" />
               <text>Sai Chaparala</text>
+            </Link>
             </div>
-          </Link>
+
           {/* Links to different pages */}
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? 'navbar-menu active' : 'navbar-menu'}>
           {/* <ul className='nav-menu'> */}
             
             {/* Navbar link to the Home page */}
-            <li>
-              <Link to='/' className='nav-item' onClick={closeMobileMenu}>
-                <i className="navbar-logo">
-                /
-                </i>
-              </Link>
-            </li>
+            <Link to='/' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
+              <li>
+                <i style={{ "font-size": "2rem" }}>/</i>
+              </li>
+            </Link>
             {/* Navbar link to the AboutMe.js page */}
-            <li>
-              <Link to='/aboutMe' className='nav-item' onClick={closeMobileMenu}>
+            <Link to='/aboutMe' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
+              <li>
                 About Me
-              </Link>
-            </li>
+              </li>
+            </Link>
             {/* Navbar link to the Interests.js page */}
-            <li>
-              <Link to='/interests' className='nav-item' onClick={closeMobileMenu}>
+            <Link to='/interests' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
+              <li>
                 Interests
-              </Link>
-            </li>
-            {/* Navbar link to the Music.js page */}
-            <li>
-              <Link to='/music' className='nav-item' onClick={closeMobileMenu}>
-                Music
-              </Link>
-            </li>
+              </li>
+            </Link>
             {/* Navbar link to the Skills.js page */}
-            <li>
-              <Link to='/skills' className='nav-item' onClick={closeMobileMenu}>
+            <Link to='/skills' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
+              <li>
                 Skills
-              </Link>
-            </li>
+              </li>
+            </Link>
             {/* Navbar link to the Projects.js page */}
-            <li>
-              <Link to='/projects' className='nav-item' onClick={closeMobileMenu}>
+            <Link to='/projects' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
+              <li>
                 Projects
-              </Link>
-            </li>
+              </li>
+            </Link>
           </ul>
+
           {/* Social Handles in Navigation bar*/}
-          <div className='nav-socials'>
-            <ul>
+            <ul className='navbar-socials'>
               <li>
                 <a href="mailto:cskrishna9306@gmail.com"><i class="fa fa-envelope"></i></a>
               </li>
@@ -85,7 +80,6 @@ function Navbar() {
                 <a href="https://github.com/cskrishna9306"><i class="fab fa-github"></i></a>
               </li>
             </ul>
-          </div>
       </nav>
   );
 }

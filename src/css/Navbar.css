@@ -22,14 +22,18 @@ body {
   padding: 0vh 4vw;
 }
 
-.navbar-icon img {
-  width: 6%;
-  /* height: 1px; Adjust the size as needed */
+.navbar-icon-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
   border-radius: 50%;
-  width: 7%;
-  object-fit: cover;
-  height: 60%;
   align-self: center;
+}
+
+.navbar-icon-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .navbar-icon text {

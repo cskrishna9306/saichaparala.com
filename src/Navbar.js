@@ -21,13 +21,14 @@ function Navbar() {
             </div>}
           </div> */}
           {/* <Link to='/' style={{ textDecoration: 'none'}}> */}
-            <div className='navbar-icon'>
+          <div className='navbar-icon'>
             <Link to='/' style={{ textDecoration: 'none', display: "flex"}}>
-
-              <img src={capitol} alt="icon" />
+              <div className='navbar-icon-container'>
+                <img src={capitol} alt="icon" />
+              </div>
               <text>Sai Chaparala</text>
             </Link>
-            </div>
+          </div>
 
           {/* Links to different pages */}
           <ul className={click ? 'navbar-menu active' : 'navbar-menu'}>

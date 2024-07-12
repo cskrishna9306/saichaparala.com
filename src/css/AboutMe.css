@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2% 10%;
+    height: 100vh;
   }
 
   .about-me h1 {

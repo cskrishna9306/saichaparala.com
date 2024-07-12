@@ -4,14 +4,12 @@ body {
 
 .about-me {
     background-color: black;
-    height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 2% 10%;
   }
 
-  .about-me > h1 {
+  .about-me h1 {
     color: #fff;
     font-size: 50px;
     align-self: center;
@@ -19,7 +17,7 @@ body {
     /* padding: 2%; */
   }
   
-  .about-me > p {
+  .about-me p {
     /* margin-top: 8px; */
     color: #fff;
     font-size: 16px;
@@ -33,7 +31,7 @@ body {
     padding: 2%;
   }
 
-  .about-me > img {
+  .about-me img {
     align-self: center;
     width: 250px;
     padding: 2%;

@@ -1,8 +1,8 @@
-# Sai Chaparala - Portfolio Website
+# Sai Chaparala
 
 A modern, responsive portfolio website built with React showcasing my journey as a Computer Science graduate student at UC San Diego, with a passion for developing scalable AI/ML solutions over the cloud.
 
-## Tech Stack
+## 🚀 Tech Stack
 
 - **Frontend**: React 18, React Router DOM
 - **Styling**: CSS3 with responsive design
@@ -10,7 +10,7 @@ A modern, responsive portfolio website built with React showcasing my journey as
 - **Build Tool**: Create React App
 - **Deployment**: Optimized for web hosting
 
-## Pages
+## 📱 Pages
 
 - **Home**: Welcome and introduction
 - **About Me**: Personal background and career goals
@@ -18,7 +18,7 @@ A modern, responsive portfolio website built with React showcasing my journey as
 - **Skills**: Technical skills and technologies
 - **Projects**: Portfolio of work and projects
 
-## Getting Started
+## 🛠️ Getting Started
 
 ### Prerequisites
 
@@ -79,7 +79,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 3. Add navigation link in `src/Navbar.js`
 4. Create corresponding CSS file in `src/css/`
 
-## License
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 

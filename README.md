@@ -1,4 +1,4 @@
-# Sai Chaparala
+# saichaparala.com
 
 A modern, responsive portfolio website built with React showcasing my journey as a Computer Science graduate student at UC San Diego, with a passion for developing scalable AI/ML solutions over the cloud.
 

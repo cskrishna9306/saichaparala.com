@@ -69,16 +69,24 @@ function Navbar() {
           {/* Social Handles in Navigation bar*/}
             <ul className='navbar-socials'>
               <li>
-                <a href="mailto:cskrishna9306@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:cskrishna9306@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-envelope"></i>
+                </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/_saaiii/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/_saaiii/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/sai-chaparala-71817b206"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/sai-chaparala-71817b206" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
               </li>
               <li>
-                <a href="https://github.com/cskrishna9306"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/cskrishna9306" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
               </li>
             </ul>
       </nav>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './css/Navbar.css';
-import capitol from './images/portraits/capitol.jpg'
+import capitol from './images/portraits/capitol.jpg';
+import { socialLinks } from './config/socialLinks';
 
 function Navbar() {
   // Initialize a variable "click" that stores the current state value and its corresponding setter function "setClick" that allows us to update the "click" state variable
@@ -69,23 +70,28 @@ function Navbar() {
           {/* Social Handles in Navigation bar*/}
             <ul className='navbar-socials'>
               <li>
-                <a href="mailto:cskrishna9306@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-envelope"></i>
+                <a href={socialLinks.email} target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-envelope"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/_saaiii/" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-instagram"></i>
+                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/sai-chaparala-71817b206" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-linkedin-in"></i>
+                <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/cskrishna9306" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-github"></i>
+                <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href={socialLinks.resume} target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-file-pdf"></i>
                 </a>
               </li>
             </ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/AboutMe.css'
 import capitol from '../images/portraits/capitol.jpg'
+import { socialLinks } from '../config/socialLinks'
 
 function AboutMe() {
   return (
@@ -15,6 +16,19 @@ function AboutMe() {
         I'm actively seeking internships in this field for Summer 2025 to gain hands-on experience and contribute to cutting-edge projects. 
         With a solid foundation in software development, database management, and cloud architecture, I'm eager to leverage my skills and knowledge to drive impactful solutions in the tech industry.
       </p>
+      
+      <div className="resume-section">
+        <a 
+          href={socialLinks.resume} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="resume-button"
+        >
+          <i className="fa fa-file-pdf"></i>
+          View Resume
+        </a>
+      </div>
+      
       <img src={capitol} alt='pic' />
     </div>
   )

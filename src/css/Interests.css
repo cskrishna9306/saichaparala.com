@@ -3,56 +3,224 @@ body {
 }
 
 .interests {
-    /* background: url('../../public/images/Image 1.JPEG') center center/cover no-repeat; */
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    padding: 5% 10%;
-  }
-  
+    min-height: 100vh;
+    padding: 2rem 0;
+    color: white;
+}
 
-  .roadmap {
-    position: fixed;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    background-color: #333;
-    padding: 10px;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  .roadmap ul {
-    list-style-type: none;
-  }
-  
-  .roadmap li {
-    margin: 10px 0;
+.interests h1 {
     text-align: center;
-  }
-  
-  .roadmap a {
+    font-size: 3rem;
+    margin-bottom: 3rem;
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .roadmap a:hover {
-    color: #ddd;
-  }
-  
-  .content {
-    margin-left: 150px; /* Adjust margin to prevent content from overlapping with the roadmap */
-    padding: 20px;
-    color: white;
-  }
-  
-  section {
-    padding: 50px 0;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  section h2 {
-    margin-top: 0;
-    color: white;
-  }
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.interests-layout {
+    display: flex;
+    min-height: calc(100vh - 200px);
+}
+
+.timeline-sidebar {
+    position: fixed;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 10;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.timeline-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: scale(1.1);
+}
+
+.timeline-dot {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    margin: 0 auto;
+}
+
+.timeline-item.active .timeline-dot {
+    transform: scale(1.3);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.interest-icon {
+    font-size: 1.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.interest-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.interests-content {
+    margin-left: 250px;
+    padding: 0 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.interest-section {
+    margin: 4rem auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    scroll-margin-top: 100px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.interest-section:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.interest-section h2 {
+    margin: 0 0 1.5rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.interest-section p {
+    margin: 0;
+    color: #e0e0e0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .timeline-sidebar {
+        left: 1rem;
+        width: 150px;
+    }
+    
+    .interests-content {
+        margin-left: 180px;
+        padding: 0 1rem;
+    }
+    
+    .timeline-label {
+        margin-left: 50px;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .timeline-label span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .interests h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .interests-layout {
+        flex-direction: column;
+    }
+    
+    .timeline-sidebar {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .timeline-line {
+        display: none;
+    }
+    
+    .timeline-item {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .timeline-dot {
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .interest-logo {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .interests-content {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+    
+    .interest-section {
+        margin: 2rem 0;
+        padding: 2rem;
+    }
+    
+    .interest-section h2 {
+        font-size: 2rem;
+    }
+}
   

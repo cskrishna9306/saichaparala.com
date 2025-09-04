@@ -13,8 +13,8 @@ function AboutMe() {
         In particular, I'm intrigued by the variety of services offered by various cloud providers with my passion lying in <b>cloud infrastructure</b>.
       </p>
       <p>
-        I'm actively seeking internships in this field for Summer 2025 to gain hands-on experience and contribute to cutting-edge projects. 
-        With a solid foundation in software development, database management, and cloud architecture, I'm eager to leverage my skills and knowledge to drive impactful solutions in the tech industry.
+        I'm actively seeking full-time opportunities starting Summer/Fall 2026 to apply my expertise and contribute to innovative projects. 
+        With a solid foundation in cloud computing, AI/ML Ops, and database management, I'm eager to leverage my skills and knowledge to drive impactful solutions in the tech industry.
       </p>
       
       <div className="resume-section">

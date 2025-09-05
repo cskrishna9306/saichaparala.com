@@ -61,6 +61,7 @@ body {
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 80px;
+  font-family: 'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
   
   .navbar-menu li:hover {

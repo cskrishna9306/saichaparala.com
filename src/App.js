@@ -2,11 +2,7 @@ import React from 'react';
 import './css/App.css';
 import Navbar from './Navbar';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './pages/Home';
-import AboutMe from './pages/AboutMe';
-import Interests from './pages/Interests';
-import Skills from './pages/Skills'
-import Projects from './pages/Projects'
+import {Home, AboutMe, Interests, Skills, Projects } from './pages';
 
 function App() {
   return (

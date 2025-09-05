@@ -88,7 +88,7 @@ function Interests() {
 
   return (
     <div className='interests'>
-      <h1>My Interests</h1>
+      <h1>cat interests.txt</h1>
       
       <div className="interests-layout">
         <div className="timeline-sidebar">

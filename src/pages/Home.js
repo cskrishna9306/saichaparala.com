@@ -6,7 +6,7 @@ import '../css/Home.css'
 function Home() {
   return (
     <div className='hero-container'>
-      <h1>Welcome to my website!</h1>
+      <h1>pwd</h1>
       <p>Use the navigation bar above to learn more about me!</p>
     </div>
   );

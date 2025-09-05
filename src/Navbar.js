@@ -1,8 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './css/Navbar.css';
-import capitol from './images/portraits/capitol.jpg';
-import { socialLinks } from './config/socialLinks';
+import { portraits } from './images';
+
+// Social media links configuration
+const socialLinks = {
+  email: {
+    url: "mailto:cskrishna9306@gmail.com",
+    icon: "fa fa-envelope"
+  },
+  instagram: {
+    url: "https://www.instagram.com/_saaiii/",
+    icon: "fab fa-instagram"
+  },
+  linkedin: {
+    url: "https://www.linkedin.com/in/sai-chaparala-71817b206",
+    icon: "fab fa-linkedin-in"
+  },
+  github: {
+    url: "https://github.com/cskrishna9306",
+    icon: "fab fa-github"
+  },
+  resume: {
+    url: "https://sai-chaparala-resume.s3.amazonaws.com/resume.pdf",
+    icon: "fa fa-file-pdf"
+  }
+};
 
 function Navbar() {
   // Initialize a variable "click" that stores the current state value and its corresponding setter function "setClick" that allows us to update the "click" state variable
@@ -25,7 +48,7 @@ function Navbar() {
           <div className='navbar-icon'>
             <Link to='/' style={{ textDecoration: 'none', display: "flex"}}>
               <div className='navbar-icon-container'>
-                <img src={capitol} alt="icon" />
+                <img src={portraits.capitol} alt="icon" />
               </div>
               <text>Sai Chaparala</text>
             </Link>
@@ -38,62 +61,44 @@ function Navbar() {
             {/* Navbar link to the Home page */}
             <Link to='/' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
               <li>
-                <i style={{ "font-size": "2rem" }}>/</i>
+                /
               </li>
             </Link>
             {/* Navbar link to the AboutMe.js page */}
             <Link to='/aboutMe' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
               <li>
-                About Me
+                whoami
               </li>
             </Link>
             {/* Navbar link to the Interests.js page */}
             <Link to='/interests' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
               <li>
-                Interests
+                interests.txt
               </li>
             </Link>
             {/* Navbar link to the Skills.js page */}
             <Link to='/skills' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
               <li>
-                Skills
+                lib
               </li>
             </Link>
             {/* Navbar link to the Projects.js page */}
             <Link to='/projects' style={{textDecoration: 'none'}} onClick={closeMobileMenu}>
               <li>
-                Projects
+                git
               </li>
             </Link>
           </ul>
 
           {/* Social Handles in Navigation bar*/}
             <ul className='navbar-socials'>
-              <li>
-                <a href={socialLinks.email} target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-envelope"></i>
-                </a>
-              </li>
-              <li>
-                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href={socialLinks.resume} target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-file-pdf"></i>
-                </a>
-              </li>
+              {Object.entries(socialLinks).map(([key, { url, icon }]) => (
+                <li key={key}>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    <i className={icon}></i>
+                  </a>
+                </li>
+              ))}
             </ul>
       </nav>
   );

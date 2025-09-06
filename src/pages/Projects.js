@@ -6,39 +6,48 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      name: "Portfolio Website",
-      description: "A responsive portfolio website built with React showcasing my skills, projects, and experience. Features modern UI/UX design with smooth animations and mobile-first approach.",
-      technologies: ["React", "CSS3", "JavaScript", "HTML5"],
+      name: "saichaparala.com",
+      description: "My personal portfolio website built with React and deployed on AWS Amplify. Features a CLI-inspired design with interactive components, responsive layouts, and smooth animations. Demonstrates expertise in frontend development, UI/UX design, and cloud deployment.",
+      technologies: ["React", "CSS3", "JavaScript", "HTML5", "AWS Amplify"],
+      demoUrl: null,
       githubUrl: "https://github.com/cskrishna9306/saichaparala.com",
-      demoUrl: "https://saichaparala.com",
       featured: true
     },
     {
       id: 2,
-      name: "E-Commerce Platform",
-      description: "Full-stack e-commerce application with user authentication, product management, shopping cart, and payment integration. Built with modern web technologies.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      githubUrl: "https://github.com/cskrishna9306/ecommerce-platform",
-      demoUrl: null,
-      featured: false
+      name: "AimBot",
+      description: "An LLM-powered esports management platform for VCT team management. Leverages AWS Bedrock and OpenSearch to provide intelligent player analysis and strategic recommendations. Uses RAG to process esports data and offer data-driven insights for team optimization.",
+      technologies: ["AWS Bedrock", "AWS OpenSearch", "AWS S3", "Python", "LLM", "RAG"],
+      githubUrl: "https://github.com/cskrishna9306/AimBot",
+      demoUrl: "https://devpost.com/software/aimbot?_gl=1*1kr50na*_gcl_au*MTU1MDI0NjM1Ni4xNzU1NzUxMDEw*_ga*MTkzMjYzNTAwNS4xNzQ0NzUxMjU0*_ga_0YHJK3Y10M*czE3NTcxMTY4NjkkbzE4JGcxJHQxNzU3MTE2ODg1JGo0NCRsMCRoMA..",
+      featured: true
     },
     {
       id: 3,
-      name: "Weather Dashboard",
-      description: "Real-time weather application with location-based forecasts, interactive maps, and detailed weather analytics. Integrates with multiple weather APIs.",
-      technologies: ["JavaScript", "API Integration", "Chart.js", "CSS3"],
-      githubUrl: "https://github.com/cskrishna9306/weather-dashboard",
-      demoUrl: "https://weather-demo.saichaparala.com",
+      name: "cubic-vs-bbr",
+      description: "A network performance analysis tool comparing TCP Cubic and BBR congestion control algorithms. Uses iperf3 and Python scripts for data collection and statistical analysis to evaluate throughput, latency, and fairness characteristics across different network conditions.",
+      technologies: ["iperf3","Python", "TCP Cubic", "TCP BBR", "bash"],
+      githubUrl: "https://github.com/cskrishna9306/cubic-vs-bbr",
+      demoUrl: null,
       featured: false
     },
     {
       id: 4,
-      name: "Task Management App",
-      description: "Collaborative task management tool with real-time updates, team collaboration features, and project tracking capabilities.",
-      technologies: ["React", "Firebase", "Material-UI", "Redux"],
-      githubUrl: "https://github.com/cskrishna9306/task-manager",
+      name: "XQuery Processor",
+      description: "A fully functional XQuery compiler built from scratch using ANTLR4 and Java. Implements lexical analysis, parsing, semantic analysis, and code generation for XML query processing. Supports complex XQuery expressions with schema validation and optimization.",
+      technologies: ["Java", "Antlr4"],
+      githubUrl: "https://github.com/cskrishna9306/XQuery-Processor",
       demoUrl: null,
       featured: true
+    },
+    {
+      id: 5,
+      name: "wiscobadminton.com",
+      description: "Official website for the UW-Madison Badminton Club featuring event schedules and membership information. Built with HTML/CSS and deployed on AWS Amplify, serving as the primary communication hub for club members and demonstrating real-world web development skills.",
+      technologies: ["HTML", "CSS", "AWS Amplify"],
+      githubUrl: "https://github.com/cskrishna9306/wiscobadminton.com",
+      demoUrl: null,
+      featured: false
     }
   ];
 

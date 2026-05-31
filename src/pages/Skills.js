@@ -7,6 +7,7 @@ function Skills() {
     <div className='skills'>
       <h1>ls -la</h1>
       
+      {/* Frontend Tech Stack */}
       <div className="skills-grid">
         <div className="skill-category">
           <h2>Frontend</h2>
@@ -30,6 +31,26 @@ function Skills() {
           </div>
         </div>
 
+        {/* AI Tools Tech Stack */}
+        <div className="skill-category">
+          <h2>AI Tools</h2>
+          <div className="technologies">
+            <div className="tech-item">
+              <img src={technology.cursor} alt="Cursor" />
+              <span>Cursor</span>
+            </div>
+            <div className="tech-item">
+              <img src={technology.claudeCode} alt="Claude Code" />
+              <span>Claude Code</span>
+            </div>
+            <div className="tech-item">
+              <img src={technology.codex} alt="Codex" />
+              <span>Codex</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Backend Tech Stack */}
         <div className="skill-category">
           <h2>Backend</h2>
           <div className="technologies">
@@ -56,6 +77,7 @@ function Skills() {
           </div>
         </div>
 
+        {/* Misc. Frameworks and Tools */}
         <div className="skill-category">
           <h2>Frameworks & Tools</h2>
           <div className="technologies">
@@ -86,6 +108,7 @@ function Skills() {
           </div>
         </div>
 
+        {/* Cloud Providers */}
         <div className="skill-category">
           <h2>Hyperscalers</h2>
           <div className="technologies">
@@ -100,6 +123,7 @@ function Skills() {
           </div>
         </div>
 
+        {/* Certifications */}
         <div className="skill-category">
           <h2>Certifications</h2>
           <div className="technologies">
@@ -110,6 +134,7 @@ function Skills() {
           </div>
         </div>
 
+        {/* OS */}
         <div className="skill-category">
           <h2>Operating Systems</h2>
           <div className="technologies">

@@ -14,7 +14,10 @@ import aws from './technology/aws-logo.jpeg';
 import awsSaa from './technology/aws-saa.png';
 import bash from './technology/bash.svg';
 import c from './technology/c.svg';
+import claudeCode from './technology/claude-code.png';
+import codex from './technology/codex.jpg';
 import cpp from './technology/cpp.svg';
+import cursor from './technology/cursor.png';
 import css3 from './technology/css3.svg';
 import dart from './technology/dart.svg';
 import docker from './technology/docker.svg';
@@ -50,7 +53,10 @@ export const technology = {
   awsSaa,
   bash,
   c,
+  claudeCode,
+  codex,
   cpp,
+  cursor,
   css3,
   dart,
   docker,

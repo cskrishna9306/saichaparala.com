@@ -6,15 +6,33 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      name: "saichaparala.com",
-      description: "My personal portfolio website built with React and deployed on AWS Amplify. Features a CLI-inspired design with interactive components, responsive layouts, and smooth animations. Demonstrates expertise in frontend development, UI/UX design, and cloud deployment.",
-      technologies: ["React", "CSS3", "JavaScript", "HTML5", "AWS Amplify"],
+      name: "V.A.R.U.N.",
+      description: "Versatile AI Discord bot that combines local LLM agents with weather, conversation, and expense-tracking workflows. Uses an AutoGen-based orchestration layer with N.A.M.I. and Beri integrations for collaborative Splitwise logging.",
+      technologies: ["Python", "Discord.py", "Ollama", "AutoGen", "Splitwise", "Docker"],
+      githubUrl: "https://github.com/cskrishna9306/V.A.R.U.N.",
       demoUrl: null,
-      githubUrl: "https://github.com/cskrishna9306/saichaparala.com",
       featured: true
     },
     {
       id: 2,
+      name: "A.T.H.E.N.A.",
+      description: "Automated Tracking and Heuristic Engine for Networked Assets, built as a conversational BigQuery analyst. Uses AutoGen agents to answer natural-language questions directly from live warehouse data.",
+      technologies: ["Python", "Google BigQuery", "AutoGen", "OpenAI API", "Pandas"],
+      githubUrl: "https://github.com/cskrishna9306/A.T.H.E.N.A.",
+      demoUrl: null,
+      featured: true
+    },
+    {
+      id: 3,
+      name: "F.R.E.E.L.O.A.D.E.R.",
+      description: "Food and restaurant event extraction engine that automates discovery from online sources and unstructured content. Blends scraping, vision-language processing, and agent-based reasoning to surface event-ready outputs.",
+      technologies: ["Python", "Selenium", "LangGraph", "AutoGen", "Transformers", "Google Calendar API"],
+      githubUrl: "https://github.com/cskrishna9306/F.R.E.E.L.O.A.D.E.R.",
+      demoUrl: null,
+      featured: true
+    },
+    {
+      id: 4,
       name: "AimBot",
       description: "An LLM-powered esports management platform for VCT team management. Leverages AWS Bedrock and OpenSearch to provide intelligent player analysis and strategic recommendations. Uses RAG to process esports data and offer data-driven insights for team optimization.",
       technologies: ["AWS Bedrock", "AWS OpenSearch", "AWS S3", "Python", "LLM", "RAG"],
@@ -23,7 +41,25 @@ function Projects() {
       featured: true
     },
     {
-      id: 3,
+      id: 5,
+      name: "saichaparala.com",
+      description: "My personal portfolio website built with React and deployed on AWS Amplify. Features a CLI-inspired design with interactive components, responsive layouts, and smooth animations. Demonstrates expertise in frontend development, UI/UX design, and cloud deployment.",
+      technologies: ["React", "CSS3", "JavaScript", "HTML5", "AWS Amplify"],
+      demoUrl: null,
+      githubUrl: "https://github.com/cskrishna9306/saichaparala.com",
+      featured: false
+    },
+    {
+      id: 6,
+      name: "A.U.R.A.",
+      description: "AI Utility for Retail Assistance focused on MCP-powered tooling and agent workflows for retail use cases. Ships with FastAPI services and modular components for assistant-driven operations.",
+      technologies: ["Python", "FastAPI", "MCP", "Uvicorn", "Requests", "BeautifulSoup"],
+      githubUrl: "https://github.com/cskrishna9306/A.U.R.A.",
+      demoUrl: null,
+      featured: false
+    },
+    {
+      id: 7,
       name: "cubic-vs-bbr",
       description: "A network performance analysis tool comparing TCP Cubic and BBR congestion control algorithms. Uses iperf3 and Python scripts for data collection and statistical analysis to evaluate throughput, latency, and fairness characteristics across different network conditions.",
       technologies: ["iperf3","Python", "TCP Cubic", "TCP BBR", "bash"],
@@ -32,16 +68,16 @@ function Projects() {
       featured: false
     },
     {
-      id: 4,
+      id: 8,
       name: "XQuery Processor",
       description: "A fully functional XQuery compiler built from scratch using ANTLR4 and Java. Implements lexical analysis, parsing, semantic analysis, and code generation for XML query processing. Supports complex XQuery expressions with schema validation and optimization.",
       technologies: ["Java", "Antlr4"],
       githubUrl: "https://github.com/cskrishna9306/XQuery-Processor",
       demoUrl: null,
-      featured: true
+      featured: false
     },
     {
-      id: 5,
+      id: 9,
       name: "wiscobadminton.com",
       description: "Official website for the UW-Madison Badminton Club featuring event schedules and membership information. Built with HTML/CSS and deployed on AWS Amplify, serving as the primary communication hub for club members and demonstrating real-world web development skills.",
       technologies: ["HTML", "CSS", "AWS Amplify"],
@@ -54,7 +90,7 @@ function Projects() {
   return (
     <div className="projects">
       <div className="projects-header">
-        <h1>git log --oneline</h1>
+        <h1>git status</h1>
         <p>Here are some of the projects I've worked on. Each project represents a learning journey and showcases different aspects of my technical skills.</p>
       </div>
 

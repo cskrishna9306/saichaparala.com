@@ -124,6 +124,54 @@ body {
   .social-icon:hover {
     color: #ddd;
   }
+
+.tooltip-target {
+  position: relative;
+}
+
+.tooltip-target::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 8px);
+  transform: translateX(-50%);
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  z-index: 1000;
+}
+
+.tooltip-target::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #111 transparent;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  z-index: 1000;
+}
+
+.tooltip-target:hover::after,
+.tooltip-target:hover::before,
+.tooltip-target:focus-visible::after,
+.tooltip-target:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+}
   
 @media screen and (max-width: 960px) {
     .NavbarItems {
